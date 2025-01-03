@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yellow-400: #facc15;
+  --yellow-500: #eab308;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.rounded-xl {
+  border-radius: 12px;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+  
+  h1 {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+}
+
+/* Modern gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
